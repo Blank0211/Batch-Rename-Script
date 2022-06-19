@@ -1,11 +1,10 @@
 import os 
-file1 = 'c:/users/s/desktop/renametest.txt'
-folder1 = 'c:/users/s/desktop/mass rename'
-os.chdir(folder1)
 
+folder1 = input('Files\' Location: ')
+os.chdir(folder1)
 filelist = os.listdir()
 
-new_name = input('Name: ')
+new_name = input('Rename to: ')
 num = int(input('Starting number: ')) 
 
 
