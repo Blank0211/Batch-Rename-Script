@@ -9,7 +9,7 @@ num = int(input('Starting number: '))
 
 
 for f in filelist:
-    os.rename(f, '{} {}.txt'.format(new_name, num))
+    os.rename(f, f'{new_name.title()} - {num}.txt')
     num +=1
 
 print(os.listdir())
