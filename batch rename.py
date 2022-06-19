@@ -4,9 +4,10 @@ folder1 = 'c:/users/s/desktop/mass rename'
 os.chdir(folder1)
 
 filelist = os.listdir()
-num = 1 
 
-new_name = input('Enter the name for the files: ')
+new_name = input('Name: ')
+num = int(input('Starting number: ')) 
+
 
 for f in filelist:
     os.rename(f, '{} {}.txt'.format(new_name, num))
